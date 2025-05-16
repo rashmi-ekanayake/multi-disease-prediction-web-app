@@ -245,6 +245,11 @@ if selected == "Pakinson Prediction":
     st.success(parkinsons_diagnosis)
 
 
+if (selected =='Heart Disease Prediction'):
+    st.title('Heart Disease Prediction using ML')
+
+if (selected =='Pakinson Prediction'):
+    st.title('Pakinson Prediction using ML')
 
 
     

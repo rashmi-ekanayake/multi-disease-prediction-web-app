@@ -2,14 +2,13 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+# loading the saved models
+diabetes_model = pickle.load(open('C:/Users/Rashmi Ekanayaka/Desktop/Projects/Git/multi-disease-prediction-web-app/saved_models/diabetes_model.sav', 'rb'))
 
-# loading the saved model
+heart_disease_model = pickle.load(open('C:/Users/Rashmi Ekanayaka/Desktop/Projects/Git/multi-disease-prediction-web-app/saved_models/heart_model.sav', 'rb'))
 
-diabetes_model = pickle.load(open('C:/Users/Rashmi Ekanayaka/Desktop/Multiple Disease Prediction System/saved models/Diabates_model.sav','rb'))
+pakinson_disease_model = pickle.load(open('C:/Users/Rashmi Ekanayaka/Desktop/Projects/Git/multi-disease-prediction-web-app/saved_models/parkinsons_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('C:/Users/Rashmi Ekanayaka/Desktop/Multiple Disease Prediction System/saved models/Heart_disease_model.sav','rb'))
-
-pakinson_disease_model = pickle.load(open('C:/Users/Rashmi Ekanayaka/Desktop/Multiple Disease Prediction System/saved models/Pakinson_disease_model.sav','rb'))
 
 
 # side bar navigation
